@@ -1,0 +1,30 @@
+{
+  "id": "1962637",
+  "name": "selectPicker",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5178248",
+      "name": "下  拉",
+      "font_class": "arrow-down",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "6390253",
+      "name": "勾选",
+      "font_class": "gouxuan",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "12364853",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    }
+  ]
+}

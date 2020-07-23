@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>demo</title>
+  <link rel="stylesheet" href="./css/font/iconfont.css">
+  <link rel="stylesheet" href="./css/select-picker.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+  <div class="demo-box">
+    <div class="select-picker" id="selectPicker">
+      <!-- 实际值seletor -->
+      <select name="select" class="select-picker-selector" multiple="multiple">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+
+      <!-- 掩盖的seletor -->
+      <button class="select-picker-btn">请选择<i class="iconfont">&#xe600;</i></button>
+      <!-- 下拉 -->
+      <div class="select-picker-dropdown">
+        <div class="select-picker-dropdown-top">
+          <div class="select-picker-dropdown-search">
+            <input type="text">
+            <i class="iconfont">&#xe67f;</i>
+          </div>
+          <div class="select-picker-dropdown-btn-group">
+            <div class="select-picker-dropdown-btn">选中所有</div>
+            <div class="select-picker-dropdown-btn">取消选中</div>
+          </div>
+        </div>
+        <div class="select-picker-dropdown-seletor">
+          <div class="select-picker-dropdown-option" data-checked="true">
+            1
+            <!-- 后期append -->
+            <i class="iconfont">&#xe60c;</i>
+          </div>
+          <div class="select-picker-dropdown-option" data-checked="false">2</div>
+          <div class="select-picker-dropdown-option" data-checked="false">3</div>
+          <div class="select-picker-dropdown-option" data-checked="false">4</div>
+        </div>
+        <div>
+          <div class="select-picker-dropdown-btn-close">关闭</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/select-picker.js"></script>
+  <script>
+    new SelectPicker();
+  </script>
+</body>
+</html>
