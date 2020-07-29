@@ -1,0 +1,171 @@
+/*
+* @Author: zhong
+* @Date:   2020-07-23 15:31:34
+* @Last Modified by:   zhong
+* @Last Modified time: 2020-07-29 14:56:54
+*/
+.select-picker button{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.select-picker input::-ms-clear, input::-ms-reveal{
+  display: none;
+}
+/* 所有内容的包裹盒子 */
+.select-picker{
+  position: relative;
+  display: inline-block;
+  width: 100px;
+}
+/* 隐藏的真真实seletor */
+.select-picker-selector{
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+/* 按钮 */
+.select-picker .select-picker-btn{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.select-picker-btn span{
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.select-picker-btn:focus, .select-picker-btn:hover{
+  background: #ccc;
+}
+.select-picker-btn>i.iconfont{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* 下拉框 */
+.select-picker-dropdown{
+  z-index: 999;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f7f7f7;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* 下拉框顶部 */
+.select-picker-dropdown-top{
+  padding: 10px;
+}
+
+/* 下拉框顶部 搜索 */
+.select-picker-dropdown-search{
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.select-picker-dropdown-search>input{
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  border: none;
+  line-height: 30px;
+  outline: none;
+}
+.select-picker-dropdown-search>.iconfont{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* 下拉框顶部 按钮 */
+.select-picker-dropdown-btn-group{
+  font-size: 0;
+}
+.select-picker-dropdown-btn{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+  margin-top: 5px;
+  padding: 8px 0;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  background: #fff;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+}
+.select-picker-dropdown-btn:first-child{
+  border-right: 0;
+}
+.select-picker-dropdown-btn:hover{
+  background: #eee;
+}
+
+/* 下拉框 选项 */
+.select-picker-dropdown-seletor{
+  max-height: 500px;
+  max-height: 50vh;
+  overflow: auto;
+  background: #fff;
+}
+
+.select-picker-dropdown-option{
+  overflow: hidden;
+  position: relative;
+  word-break: break-all;
+  padding: 10px;
+  padding-right: 20%;
+  font-size: 12px;
+  cursor: pointer;
+  background: #fff;
+}
+.select-picker-dropdown-option:hover{
+  background: #eee;
+}
+.select-picker-dropdown-option[data-checked]>.iconfont{
+  position: absolute;
+  top: 0;
+  right: 20px;
+  line-height: 36px;
+}
+
+/* 下拉框 关闭 */
+.select-picker-dropdown-btn-close{
+  margin: 10px;
+  padding: 8px 0;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.select-picker-dropdown-btn-close:hover{
+  background: #eee;
+}

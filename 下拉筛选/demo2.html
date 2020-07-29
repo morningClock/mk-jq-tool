@@ -11,49 +11,36 @@
 </head>
 <body>
   <div class="demo-box">
-    <div class="select-picker" id="selectPicker">
-      <!-- 实际值seletor -->
-      <select name="select" class="select-picker-selector" multiple="multiple">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-
-      <!-- 掩盖的seletor -->
-      <button class="select-picker-btn">请选择<i class="iconfont">&#xe600;</i></button>
-      <!-- 下拉 -->
-      <div class="select-picker-dropdown">
-        <div class="select-picker-dropdown-top">
-          <div class="select-picker-dropdown-search">
-            <input type="text">
-            <i class="iconfont">&#xe67f;</i>
-          </div>
-          <div class="select-picker-dropdown-btn-group">
-            <div class="select-picker-dropdown-btn">选中所有</div>
-            <div class="select-picker-dropdown-btn">取消选中</div>
-          </div>
-        </div>
-        <div class="select-picker-dropdown-seletor">
-          <div class="select-picker-dropdown-option" data-checked="true">
-            1
-            <!-- 后期append -->
-            <i class="iconfont">&#xe60c;</i>
-          </div>
-          <div class="select-picker-dropdown-option" data-checked="false">2</div>
-          <div class="select-picker-dropdown-option" data-checked="false">3</div>
-          <div class="select-picker-dropdown-option" data-checked="false">4</div>
-        </div>
-        <div>
-          <div class="select-picker-dropdown-btn-close">关闭</div>
-        </div>
-      </div>
+    <div class="select-picker" id="selectPicker" style="width: 200px">
+     
+    </div>
+    <div class="select-picker" id="selectPicker2" style="width: 250px">
+     
     </div>
   </div>
 
   <script src="js/select-picker.js"></script>
   <script>
-    new SelectPicker();
+    // demo1
+    var selectPicker1 = new SelectPicker({
+      elem: '#selectPicker',
+      datas: ['湖北学院','工商学院','桂林大学','广东大学','工业大学','北京大学','农业大学', '上海大学', '哈尔滨大学']
+    });
+    // 获取值
+    selectPicker1.onChange(function(val){
+      console.log("1选中的值为；", val)
+    })
+
+
+    // demo2
+    var selectPicker2 = new SelectPicker({
+      elem: '#selectPicker2',
+      datas: ['option1','option2','option3','option4']
+    });
+    // 获取值
+    selectPicker2.onChange(function(val){
+      console.log("2选中的值为；", val)
+    })
   </script>
 </body>
 </html>
