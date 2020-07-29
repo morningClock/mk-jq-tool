@@ -22,25 +22,25 @@
   <script src="js/select-picker.js"></script>
   <script>
     // demo1
-    var selectPicker1 = new SelectPicker({
+    var demo1 = new SelectPicker({
       elem: '#selectPicker',
       datas: ['湖北学院','工商学院','桂林大学','广东大学','工业大学','北京大学','农业大学', '上海大学', '哈尔滨大学']
     });
     // 获取值
-    selectPicker1.onChange(function(val){
+    demo1.onChange(function(val){
       console.log("1选中的值为；", val)
     })
 
 
-    // demo2
-    var selectPicker2 = new SelectPicker({
-      elem: '#selectPicker2',
-      datas: ['option1','option2','option3','option4']
-    });
-    // 获取值
-    selectPicker2.onChange(function(val){
-      console.log("2选中的值为；", val)
-    })
+    // // demo2
+    // var demo2 = new SelectPicker({
+    //   elem: '#selectPicker2',
+    //   datas: ['option1','option2','option3','option4']
+    // });
+    // // 获取值
+    // demo2.onChange(function(val){
+    //   console.log("2选中的值为；", val)
+    // })
   </script>
 </body>
 </html>
